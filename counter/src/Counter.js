@@ -11,11 +11,19 @@ class Counter extends React.Component {
   }
   
   render() {
+    const { name } = this.props
+    const { value } = this.state
     return (
-      <div>
-        <h1> {this.state.value} </h1>
-          <button onClick={this.inc}>+</button>
-          <button onClick={this.dec}>-</button>
+      <div
+        style={{
+          backgroundColor: name,
+          color: 'white'
+        }}
+      >
+        <h1>{name} counter</h1>
+        <h1> {value} </h1>
+        <button onClick={this.inc}>+</button>
+        <button onClick={this.dec}>-</button>
       </div>
     )
   }

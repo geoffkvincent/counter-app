@@ -11,9 +11,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Counter Example</h1>
         </header>
-        <Counter />
-        <Counter />
-        <Counter />
+        <Counter name='red' />
+        <Counter name='blue' />
+        <Counter name='purple' />
+        <Counter name='yellow' />
       </div>
     );
   }
