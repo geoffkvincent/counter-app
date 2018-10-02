@@ -1,4 +1,5 @@
 import React from 'react'
+import Clock from './Clock'
 
 class Counter extends React.Component {
   state = { value: 0 }
@@ -20,6 +21,7 @@ class Counter extends React.Component {
           color: 'white'
         }}
       >
+        <Clock />
         <h1>{name} counter</h1>
         <h1> {value} </h1>
         <button onClick={this.inc}>+</button>
